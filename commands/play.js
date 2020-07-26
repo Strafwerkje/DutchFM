@@ -37,6 +37,6 @@ var channelJoin = message.member.voice.channel.join()
 
 }
 module.exports.help = {
-  name: "plasdrghdgdgjkdhfhfhjhfjy",
+  name: "play",
   description: "doet de bot en Muziekje afspelen."
 }
