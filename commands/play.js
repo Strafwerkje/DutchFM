@@ -3,7 +3,7 @@ const ytdl = require("ytdl-core");
 
 module.exports.run = async (bot, message, args) => {
   message.delete()
-  if(!message.member.voice.channel) return message,reply("connecteer met een spraak kanaal");
+  if(!message.member.voice.channel) return message.reply("connecteer met een spraak kanaal");
 
 if(message.guild.me.voice.channel) return message.channel.send("sorry de bot is al verbonden")
 
