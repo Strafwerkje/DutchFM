@@ -33,7 +33,7 @@ module.exports.run = async (bot, message, args) => {
 
     message.channel.send(embed).then(msg => msg.delete({timeout: 4000}));
 
-    message.guild.channels.create("🎫-" + userName.toLowerCase(), { type: 'text' }).then(
+    message.guild.channels.create("〖🎫〗" + userName.toLowerCase(), { type: 'text' }).then(
         (createdChannel) => {
             createdChannel.setParent(categoryID).then(
                 (settedParent) => {
