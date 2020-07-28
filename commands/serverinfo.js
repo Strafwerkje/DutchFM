@@ -29,7 +29,7 @@ module.exports.run = async (client, message, args) => {
     .setTitle(`**● Server Name:** ${message.member.displayAvatarURL}`,)
     .setTimestamp()
     .setFooter(botConfig.footer)
-    .setThumbnail(client.user.displayAvatarURL())
+    .setThumbnail(message.user.name())
     .setColor("#0099ff")
 
     .addField("_**Algemeen:**_", [
