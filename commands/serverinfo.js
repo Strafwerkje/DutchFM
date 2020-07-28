@@ -48,10 +48,12 @@ module.exports.run = async (client, message, args) => {
             `\u200b`
             ])
         .addField(`_**Botinfo:**_`, [
-            `**👤 | Bot name** ${client.guilds.username}`,
-            `**📧 | Bot ID:** ${client.guilds.id}`,
-            `**👋 | Bot since:** ${client.guilds.joinedAt}`,
-            `**👋 | Bot on servers:** ${client.guilds.cache.size}`,
+            `**👤 | Bot name** ${client.user.username}`,
+            `**📧 | Bot ID:** ${client.user.id}`,
+            `**👋 | Bot since:** ${client.user.createdAt}`,
+            `**🔢 | Bot on servers:** ${client.guilds.cache.size}`,
+            `**💻 | Bot prefix:** ${botConfig.prefix}`,
+            `**✨ | Bot creater:** ${botConfig.owner}`,
             `\u200b`
             ])
         .setFooter("DutchFM Bot")
