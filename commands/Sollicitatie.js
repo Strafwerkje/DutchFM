@@ -27,13 +27,13 @@ module.exports.run = async (bot, message, args) => {
     var embed = new discord.MessageEmbed()
     .setFooter(botConfig.footer)
     .setTitle("Welkom " + message.author.username)
-        .setDescription("_**Uw ticket is aangemaakt!**_")
+        .setDescription("_**Uw sollicitatie is aangemaakt!**_")
         .setTimestamp()
         .setFooter("DutchFM Bot")
 
     message.channel.send(embed).then(msg => msg.delete({timeout: 4000}));
 
-    message.guild.channels.create("🎫-" + userName.toLowerCase(), { type: 'text' }).then(
+    message.guild.channels.create("〖📧〗" + userName.toLowerCase(), { type: 'text' }).then(
         (createdChannel) => {
             createdChannel.setParent(categoryID).then(
                 (settedParent) => {
@@ -84,5 +84,5 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.help = {
     name: "sollicitatie",
-    description: "dit is Onze ticket systeem."
+    description: ".."
 }

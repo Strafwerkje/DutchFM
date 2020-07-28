@@ -15,6 +15,7 @@ module.exports.run = async (client, message, args) => {
         `**❓ | help:** Krijg dit command te zien.`,
         `**❓ | serverinfo:** Krijg alle infomatie over de server en uw account te zien.`,
         `**❓ | ticket of new:** Maak een ticket aan waarmee je met staff kunt praten of vragen kunt stellen.`,   
+        `**❓ | sollicitatie:** Maak een sollicitatie voor: staff partner DJ of andere dingen`,        
         `\u200b`
         ])
     .setFooter("DutchFM Bot")

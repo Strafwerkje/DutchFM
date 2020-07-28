@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
 
     message.guild.channels.cache.forEach(channel => {
 
-        if (channel.name == "🎫-" + userName.toLowerCase()) {
+        if (channel.name == "〖🎫〗" + userName.toLowerCase()) {
             ticketExist = true;
 
             message.reply("Je hebt al een ticket!");
