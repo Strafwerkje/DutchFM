@@ -51,9 +51,28 @@ fs.readdir("./commands/", (err, filles) => {
              .setTimestamp()
            
                channel.send(joinEmbed);
+               
+            })           
+              
+               client.on("guildMemberRemove" , member => {
+
+   
+                var channel = member.guild.channels.cache.get(`738409212572467281`);
+              
+                if(!channel) return;
+              
+              var leaveEmbed = new discord.MessageEmbed()
+                  .setAuthor(`${member.user.tag}`, member.user.displayAvatarURL)
+                  .setDescription(`${member.user.username} heeft de server verlater er zijn nog ${message.guild.memberCount} mensen in de server!,`)
+                  .setColor("#FF0000")
+                  .setFooter("DutchFm leave message")
+                  .setTimestamp()
+              
+                  channel.send(leaveEmbed);
+              
+              })           
            
-           
-})
+
 
  
 client.on("ready", async () => {
