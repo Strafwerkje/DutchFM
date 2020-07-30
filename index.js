@@ -63,7 +63,7 @@ fs.readdir("./commands/", (err, filles) => {
               
               var leaveEmbed = new discord.MessageEmbed()
                   .setAuthor(`${member.user.tag}`, member.user.displayAvatarURL)
-                  .setDescription(`${member.user.username} heeft de server verlater er zijn nog ${message.guild.memberCount} mensen in de server!,`)
+                  .setDescription(`${member.user.username} heeft de server verlater er zijn nog ${member.guild.memberCount} mensen in de server!,`)
                   .setColor("#FF0000")
                   .setFooter("DutchFm leave message")
                   .setTimestamp()
