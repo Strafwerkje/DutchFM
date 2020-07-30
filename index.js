@@ -63,7 +63,7 @@ fs.readdir("./commands/", (err, filles) => {
               
               var leaveEmbed = new discord.MessageEmbed()
                   .setAuthor(`${member.user.tag}`, member.user.displayAvatarURL)
-                  .setDescription(`${member.user.username} heeft de server verlater er zijn nog** ${member.guild.memberCount} **mensen in de server!,`)
+                  .setDescription(`🔴${member.user.username} heeft de server verlater er zijn nog** ${member.guild.memberCount} **mensen in de server! 🔴`)
                   .setColor("#FF0000")
                   .setFooter("DutchFm leave message")
                   .setTimestamp()
@@ -79,8 +79,8 @@ fs.readdir("./commands/", (err, filles) => {
                
                  var joinEmbed = new discord.MessageEmbed()
                  .setAuthor(`${member.user.tag}`, member.user.displayAvatarURL)
-                 .setDescription(`${member.user.username} is nieuw in de server er zijn nu** ${member.guild.memberCount} **mensen in de server!`)
-                 .setColor("#0099ff")
+                 .setDescription(`🟢${member.user.username} is nieuw in de server er zijn nu** ${member.guild.memberCount} **mensen in de server!🟢`)
+                 .setColor("#72d830")
                  .setFooter("DutchFM Join Message")
                  .setTimestamp()
                
