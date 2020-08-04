@@ -12,10 +12,12 @@ module.exports.run = async (bot, message, args) => {
     .setDescription(`${message.author.username} je bent verified!`)
     return message.channel.send(verified);
            
-    var role = message.member.roles.cache.add(`719936328158019585`);    
+        
     
     if(!role) return;
   
+    var role = message.member.roles.cache.add(`719936328158019585`);
+
     member.roles.add(role);
 }
 
