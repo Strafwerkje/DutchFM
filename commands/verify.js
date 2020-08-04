@@ -1,4 +1,4 @@
-const { RichEmbed } = require('discord.js');
+const discord = require('discord.js');
 
 exports.run = async (client, message, args) => {
 
@@ -12,7 +12,7 @@ exports.run = async (client, message, args) => {
 
     const a = message.guild.roles.add('719936328158019585'); // Moderator
 
-    const embed = new RichEmbed()
+    const embed = new discord.MessageEmbed()
         .setTitle('Verify Syteem')
         .setDescription(`
        
