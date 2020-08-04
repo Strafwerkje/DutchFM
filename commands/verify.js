@@ -10,7 +10,7 @@ exports.run = async (client, message, args) => {
 
     await message.delete().catch(O_o => {});
 
-    const a = message.guild.roles.get('719936328158019585'); // Moderator
+    const a = message.guild.roles.add('719936328158019585'); // Moderator
 
     const embed = new RichEmbed()
         .setTitle('Verify Syteem')
