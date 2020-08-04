@@ -11,8 +11,12 @@ module.exports.run = async (bot, message, args) => {
     .setTimestamp()
     .setDescription(`${message.author.username} je bent verified!`)
     return message.channel.send(verified);
-
-
+           
+    var role = message.member.roles.cache.add(`719936328158019585`);    
+    
+    if(!role) return;
+  
+    member.roles.add(role);
 }
 
 module.exports.help = {
