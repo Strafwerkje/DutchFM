@@ -1,5 +1,4 @@
-const { RichEmbed } = require('discord.js');
-const { prefix } = require('../config');
+const discord = require("discord.js");
 
 exports.run = async (client, message, args) => {
 
